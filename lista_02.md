@@ -48,6 +48,7 @@ C) O código avalia a expressão booleana, imprime o resultado `true` e verifica
 
 D) O código avalia a expressão booleana, imprime o resultado `false` e ordena a lista de números em ordem crescente.
 
+A resposta correta é B
 
 ______
 
@@ -112,6 +113,8 @@ C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a d
 
 D) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -100.'
 
+A resposta correta é B
+
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -139,7 +142,7 @@ C) O código verifica se o número é par e se é divisível por 3. Se for par, 
 
 D) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for ímpar, exibe a mensagem "O número é ímpar!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!".
 
-
+A resposta correta é C
 ______
 
 **4)** Qual será o resultado impresso no console após a execução desse código?
