@@ -48,6 +48,8 @@ C) O código avalia a expressão booleana, imprime o resultado `true` e verifica
 
 D) O código avalia a expressão booleana, imprime o resultado `false` e ordena a lista de números em ordem crescente.
 
+A alternativa correta é B
+
 
 ______
 
@@ -112,6 +114,8 @@ C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a d
 
 D) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -100.'
 
+A alternativa correta é B
+
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -139,7 +143,7 @@ C) O código verifica se o número é par, ímpar ou divisível por 3. Se for pa
 
 D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
-
+A alternativa correta é C
 ______
 
 **4)** Qual será o resultado impresso no console após a execução desse código?
@@ -213,6 +217,7 @@ Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
 
+A alternativa correta é D
 ______
 
 **5)** Qual é o principal ciclo de vida de um jogo em Phaser.js?
@@ -226,6 +231,9 @@ B) Preload -> Create -> Update
 C) Load -> Initialize -> Render
 
 D) Begin -> Play -> End
+
+A alternativa correta é B
+
 ______
 
 **6)** Qual é o objetivo principal do módulo Arcade Physics em Phaser.js?
@@ -240,12 +248,30 @@ C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
 
 D) Gerenciar a lógica do jogo e a sincronização de eventos em jogos multiplayer.
 
+A alternativa correta é B
 ______
 
 # Questões dissertativas
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
+
+Início
+
+Usuário insere sua idade
+
+ Verifica a idade:
+    Se for menor que 16:
+        Não pode votar
+    Se não for menor que 16:
+    Verifica se a idade é maior ou igual a 16 e menor que 18
+        Se for verdade:
+        Voto facultativo!
+        Se não for verdade:
+        Voto obrigatório
+
+Fim
+
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
@@ -261,13 +287,49 @@ Classe FormaGeometrica:
     Método CalcularArea():
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
+Classe Retângulo que herda da classe FormaGeometrica:
+
+    Atributos:
+        - Retângulo herda atributo cor da classe pai
+        - largura
+        - comprimento
+    
+    Método Construtor(cor):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+    
+    Método CalcularArea(largura, comprimento):
+        retorna largura * comprimento
+    
+Classe Circulo que herda da classe FormaGeometrica
+    Circulo herda atributo da cor da classe pai
+
+    Atributos:
+        - Circulo herda atributo cor da classe pai
+        - raio
+
+    Método Construtor(cor):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+
+    Método CalcularArea(raio)
+        retorna raio^2 * 4,28        
+    
+
 ```
 
 ______
 
 **9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
 
+```javascript
+Início
 
+Função TempoDeUmaDistância(distancia, velocidadeInicial, aceleracao, velocidadeMaxima, tempoMaximo): 
+    velocidadeAtual = velocidadeInicial
+
+    
+
+
+```
 
 ______
 
