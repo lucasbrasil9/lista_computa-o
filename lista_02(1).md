@@ -256,6 +256,7 @@ ______
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
 
+```
 Início
 
 Usuário insere sua idade
@@ -271,7 +272,7 @@ Usuário insere sua idade
         Voto obrigatório
 
 Fim
-
+```
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
@@ -320,14 +321,32 @@ ______
 
 **9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
 
-```javascript
+```
 Início
 
-Função TempoDeUmaDistância(distancia, velocidadeInicial, aceleracao, velocidadeMaxima, tempoMaximo): 
-    velocidadeAtual = velocidadeInicial
+Função tempoDeUmaDistancia(distancia, velocidadeInicial, aceleracao, velocidadeMaxima, tempoMaximo): 
+    velocidade = velocidadeInicial
+    tempo = 0
 
-    
+    enquanto tempo <= tempoMaximo:
+        velocidade = velocidade + aceleração * tempo
 
+        se velocidade > velocidadeMaxima:
+            velocidade = velocidadeMaxima
+
+        distanciaPercorrida = velocidade * tempo
+
+        se distanciaPercorrida >= distancia:
+            retornar tempo
+        senão:
+            tempo = tempo + 1
+    retornar -1
+
+tempoTotal = tempoDeUmaDistancia(800, 0, 4, 80, 20)
+se tempoTotal != -1;
+    imprimir ("O carro completou a corrida em ", tempoTotal, " minutos.")
+senão:
+    imprimir("O carro não conseguiu completar a corrida dentro do tempo máximo.")
 
 ```
 
@@ -359,4 +378,36 @@ matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
+```
+
+Resposta:
+```
+Função MultiplicaçãoDeMatrizes(matrizA, matrizB):
+    # Verifica se o número de colunas em matrizA é igual ao número de linhas em matrizB
+    Se númeroDeColunas(matrizA) ≠ númeroDeLinhas(matrizB) então:
+        Retornar "As matrizes não podem ser multiplicadas. O número de colunas em matrizA não é igual ao número de linhas em matrizB."
+    Senão:
+        linhasA <- númeroDeLinhas(matrizA)
+        colunasA <- númeroDeColunas(matrizA)
+        colunasB <- númeroDeColunas(matrizB)
+        matrizResultado <- novaMatriz(linhasA, colunasB)
+
+        # Loop para percorrer cada elemento das matrizes e calcular o produto
+        Para i de 0 até linhasA-1 faça:
+            Para j de 0 até colunasB-1 faça:
+                Soma <- 0
+                Para k de 0 até colunasA-1 faça:
+                    Soma <- Soma + (matrizA[i][k] * matrizB[k][j])
+                matrizResultado[i][j] <- Soma
+
+        Retornar matrizResultado
+
+# Exemplo de uso da função
+matrizA <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+matrizProduto <- MultiplicaçãoDeMatrizes(matrizA, matrizB)
+Escrever("Produto das matrizes:")
+ImprimirMatriz(matrizResultado)
+
 ```
